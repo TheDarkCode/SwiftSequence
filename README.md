@@ -21,6 +21,32 @@ To make an eager sequence lazy, the `lazy` property can be used:
 
 Contributions welcome! Anything at all, as long as it's related to sequences, Linux-compatible, and has a test or two.
 
+##CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+> CocoaPods 0.39.0+ is required to build SwiftSequence 1.0.1+.
+
+To integrate SwiftSequence into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+platform :osx, '10.9'
+use_frameworks!
+
+pod 'SwiftSequence', '~> 1.0.1'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
 
 ## Contents ##
 
@@ -517,3 +543,9 @@ zipWithPadding([1, 2, 3], [1, 2])
 
 (1?, 1?), (2?, 2?), (3?, nil)
 ```
+
+##Related Projects:
+
+###Example Swift Apps by Mark Hamilton, Dryverless
+Collection of example applications written in Swift / Objective-C for iOS 9.x
+######https://github.com/TheDarkCode/Example-Swift-Apps
