@@ -43,6 +43,7 @@
 		70CB76F61C13BFD9003A7461 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB76D61C13BFC0003A7461 /* TestHelpers.swift */; };
 		70CB76F71C13BFD9003A7461 /* ZipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB76D71C13BFC0003A7461 /* ZipTests.swift */; };
 		70CB76FA1C13C03E003A7461 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 707F997B1C13B9EB00CE1A23 /* Info.plist */; };
+		BF92E1F01D11E63100FF4029 /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BF92E1EF1D11E63100FF4029 /* Project.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		70CB76D51C13BFC0003A7461 /* TakeDropTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeDropTests.swift; sourceTree = "<group>"; };
 		70CB76D61C13BFC0003A7461 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		70CB76D71C13BFC0003A7461 /* ZipTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipTests.swift; sourceTree = "<group>"; };
+		BF92E1EF1D11E63100FF4029 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		707F99601C13B9EA00CE1A23 = {
 			isa = PBXGroup;
 			children = (
+				BF92E1EE1D11E63100FF4029 /* Configs */,
 				707F996C1C13B9EA00CE1A23 /* Sources */,
 				707F99781C13B9EB00CE1A23 /* Tests */,
 				707F996B1C13B9EA00CE1A23 /* Products */,
@@ -182,6 +185,15 @@
 				707F997B1C13B9EB00CE1A23 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		BF92E1EE1D11E63100FF4029 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				BF92E1EF1D11E63100FF4029 /* Project.xcconfig */,
+			);
+			name = Configs;
+			path = SwiftSequence.xcodeproj/Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF92E1F01D11E63100FF4029 /* Project.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +362,7 @@
 /* Begin XCBuildConfiguration section */
 		707F997C1C13B9EB00CE1A23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF92E1EF1D11E63100FF4029 /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -396,6 +410,7 @@
 		};
 		707F997D1C13B9EB00CE1A23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF92E1EF1D11E63100FF4029 /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
